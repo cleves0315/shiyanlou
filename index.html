@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>bootstrap</title>
+  <!-- <link rel="stylesheet" href="./static/css/bootstrap.min.css"> -->
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/jquery.dropdown.min.css">
+  <link rel="stylesheet" href="./static/css/swiper.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header page-header clearfix">
+      <div class="container">
+        <div class="header-tit clearfix">
+          <a class="navbar-brand" href="/"><img class="logo" src="./static/img/logo.svg" alt="logo"></a>
+          <span class="header-title">做实验，学编程</span>
+          <div class="header-right-menu">
+            <div class="header-change-version">
+              <a href="#" class="enterprise">企业版</a>
+              <a href="#" class="scroll">学校版</a>
+            </div>
+            <div class="menu-wrap">
+              <a href="#" class="login">登陆</a>
+              <a href="#" class="registered">注册</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav">
+          <div class="course-list-header"><a href="#"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> 全部课程</a></div>
+          <div class="nav">
+            <ul class="nav-list clearfix">
+              <li class="nav-item"><a href="#">路径</a></li>
+              <li class="nav-item"><a href="#">训练营</a></li>
+              <li class="nav-item"><a href="#">楼+</a></li>
+              <li class="nav-item"><a href="#">会员</a></li>
+              <li class="nav-item dropdown">
+                <a class="community" href="#">社区 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                <ul class="community-menu">
+                  <li><a href="#">讨论</a></li>
+                  <li><a href="#">教程库</a></li>
+                  <li><a href="#">直播</a></li>
+                  <li><a href="#">比赛</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav-inquire">
+              <div class="input-group input-group-sm">
+                <input type="text" class="mr-sm-2 form-control" placeholder="搜索 课程/问答" aria-describedby="basic-addon1">
+                <span class="glyphicon glyphicon-search search-btn" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-widescreen">
+      <div class="container">
+        <a href="#"><img src="./static/img/logos.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container dropdown">
+        <button class="more-btn dropdown-toggle" type="button" aria-label="Toggle navigation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
+        <a class="logo" href="#"><img src="https://static.shiyanlou.com/frontend/dist/img/9f43b00.svg" alt=""></a>
+        <ul class="more-list">
+          <li><a href="#">课程 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
+          <li><a href="#">训练营</a></li>
+          <li><a href="#">楼+</a></li>
+          <li><a href="#">会员</a></li>
+          <li><a href="#">社区 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <ul class="banner-nav-list">
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">后端开发</a>
+              <a href="#" class="banner-nav-link">Python</a>
+              <a href="#" class="banner-nav-link">PHP</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">后端开发</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Python</a>
+                  <a href="#" class="cate-item">PHP</a>
+                  <a href="#" class="cate-item">Java</a>
+                  <a href="#" class="cate-item">Ruby</a>
+                  <a href="#" class="cate-item">Laravel</a>
+                  <a href="#" class="cate-item">C</a>
+                  <a href="#" class="cate-item">C++</a>
+                  <a href="#" class="cate-item">Go</a>
+                  <a href="#" class="cate-item">Flask</a>
+                  <a href="#" class="cate-item">OpenCV</a>
+                  <a href="#" class="cate-item">ThinkPHP</a>
+                  <a href="#" class="cate-item">爬虫</a>
+                  <a href="#" class="cate-item">Django</a>
+                  <a href="#" class="cate-item">Spring</a>
+                  <a href="#" class="cate-item">SSM</a>
+                  <a href="#" class="cate-item">SpringBoot</a>
+                  <a href="#" class="cate-item">Node.js</a>
+                  <a href="#" class="cate-item">Rust</a>
+                  <a href="#" class="cate-item">Nginx</a>
+                  <a href="#" class="cate-item">MongoDB</a>
+                  <a href="#" class="cate-item">Micronaut</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">Python 新手入门课</a>
+                  <a href="#" class="recommend-item">Java 简明教程</a>
+                  <a href="#" class="recommend-item">Django 基础入门</a>
+                  <a href="#" class="recommend-item">Python 实现简单 Web 服务器</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">Linux 运维</a>
+              <a href="#" class="banner-nav-link">Ansible</a>
+              <a href="#" class="banner-nav-link">Git</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">Linux 运维</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Ansible</a>
+                  <a href="#" class="cate-item">Git</a>
+                  <a href="#" class="cate-item">Linux</a>
+                  <a href="#" class="cate-item">Nginx</a>
+                  <a href="#" class="cate-item">Shell</a>
+                  <a href="#" class="cate-item">网络</a>
+                  <a href="#" class="cate-item">CentOS</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">Linux 基础入门</a>
+                  <a href="#" class="recommend-item">高级 Basg 脚本编程指南</a>
+                  <a href="#" class="recommend-item">Git 与 GitHub 入门实践</a>
+                  <a href="#" class="recommend-item">Kubernetes 基础入门实战</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">云计算与大数据</a>
+              <a href="#" class="banner-nav-link">Hadoop</a>
+              <a href="#" class="banner-nav-link">Spark</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">云计算与大数据</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Hadoop</a>
+                  <a href="#" class="cate-item">Spark</a>
+                  <a href="#" class="cate-item">Scala</a>
+                  <a href="#" class="cate-item">Docker</a>
+                  <a href="#" class="cate-item">Hbase</a>
+                  <a href="#" class="cate-item">Hive</a>
+                  <a href="#" class="cate-item">机器学习</a>
+                  <a href="#" class="cate-item">SDN</a>
+                  <a href="#" class="cate-item">Kafka</a>
+                  <a href="#" class="cate-item">云计算</a>
+                  <a href="#" class="cate-item">大数据</a>
+                  <a href="#" class="cate-item">TensorFlow</a>
+                  <a href="#" class="cate-item">知识图谱</a>
+                  <a href="#" class="cate-item">Kubernetes</a>
+                  <a href="#" class="cate-item">数据分析</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">机器学习开放基础课程</a>
+                  <a href="#" class="recommend-item">Kaggle 数据分析项目入门实战</a>
+                  <a href="#" class="recommend-item">Hadoop Flume 收集数据实战</a>
+                  <a href="#" class="recommend-item">大数据带你挖掘打车的秘籍</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">数据库</a>
+              <a href="#" class="banner-nav-link">SQL</a>
+              <a href="#" class="banner-nav-link">NoSQL</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">数据库</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">SQL</a>
+                  <a href="#" class="cate-item">NoSQL</a>
+                  <a href="#" class="cate-item">MongoDB</a>
+                  <a href="#" class="cate-item">MySQL</a>
+                  <a href="#" class="cate-item">Redis</a>
+                  <a href="#" class="cate-item">Neo4j</a>
+                  <a href="#" class="cate-item">Oracle</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">MySQL 基础课程</a>
+                  <a href="#" class="recommend-item">MongoDB 基础教程</a>
+                  <a href="#" class="recommend-item">Python3 实现键值数据库</a>
+                  <a href="#" class="recommend-item">Spark SQL 入门到上手实战</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">信息安全</a>
+              <a href="#" class="banner-nav-link">Web安全</a>
+              <a href="#" class="banner-nav-link">安全开发</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">信息安全</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Web安全</a>
+                  <a href="#" class="cate-item">安全开发</a>
+                  <a href="#" class="cate-item">网络安全</a>
+                  <a href="#" class="cate-item">Kali</a>
+                  <a href="#" class="cate-item">加密解密</a>
+                  <a href="#" class="cate-item">系统安全</a>
+                  <a href="#" class="cate-item">渗透测试</a>
+                  <a href="#" class="cate-item">信息隐藏</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">密钥加解密实验</a>
+                  <a href="#" class="recommend-item">SQL 注入基础原理介绍</a>
+                  <a href="#" class="recommend-item">Python 实现端口扫描器</a>
+                  <a href="#" class="recommend-item">Linux 防火墙技术入门</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">Web 前端</a>
+              <a href="#" class="banner-nav-link">Bootstrap</a>
+              <a href="#" class="banner-nav-link">CSS</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">Web 前端</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Bootstrap</a>
+                  <a href="#" class="cate-item">CSS</a>
+                  <a href="#" class="cate-item">HTML</a>
+                  <a href="#" class="cate-item">HTML5</a>
+                  <a href="#" class="cate-item">JavaScript</a>
+                  <a href="#" class="cate-item">jQuery</a>
+                  <a href="#" class="cate-item">Node.js</a>
+                  <a href="#" class="cate-item">React</a>
+                  <a href="#" class="cate-item">Vue.js</a>
+                  <a href="#" class="cate-item">Web</a>
+                  <a href="#" class="cate-item">TypeScript</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">HTML 基础课程</a>
+                  <a href="#" class="recommend-item">CSS3 简明教程</a>
+                  <a href="#" class="recommend-item">JavaScript 基础入门</a>
+                  <a href="#" class="recommend-item">React 全家桶实现销售管理系统</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">计算机专业课</a>
+              <a href="#" class="banner-nav-link">新手入门</a>
+              <a href="#" class="banner-nav-link">算法</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">计算机专业课</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">新手入门</a>
+                  <a href="#" class="cate-item">算法</a>
+                  <a href="#" class="cate-item">计算机专业课</a>
+                  <a href="#" class="cate-item">设计模式</a>
+                  <a href="#" class="cate-item">汇编</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">数据结构（C 语言）</a>
+                  <a href="#" class="recommend-item">操作系统原理与实践</a>
+                  <a href="#" class="recommend-item">TCP/IP 网络协议基础入门</a>
+                  <a href="#" class="recommend-item">C 语言简明教程</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="banner-nav-link">其他技术</a>
+              <a href="#" class="banner-nav-link">Swift</a>
+              <a href="#" class="banner-nav-link">Windows</a>
+            </div>
+            <div class="cate-wrap">
+              <div class="wrapper">
+                <div class="cate-title">其他技术</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="cate-item">Swift</a>
+                  <a href="#" class="cate-item">Windows</a>
+                  <a href="#" class="cate-item">Electron</a>
+                  <a href="#" class="cate-item">Android</a>
+                  <a href="#" class="cate-item">R</a>
+                  <a href="#" class="cate-item">Julia</a>
+                  <a href="#" class="cate-item">Pygame</a>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="cate-title recommend-title">课程推荐</div>
+                <div class="cate-list clearfix">
+                  <a href="#" class="recommend-item">R 语言基础入门</a>
+                  <a href="#" class="recommend-item">R 语言高级数据管理</a>
+                  <a href="#" class="recommend-item">R 语言英国房屋价格建模预测</a>
+                  <a href="#" class="recommend-item">Githook 优化代码 Review 流程</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="banner-nav-item">
+            <div class="banner-nav-inner">
+              <a href="#" class="special-area">经管专区</a>
+            </div>
+            <!-- <div class="cate-wrap"></div> -->
+          </li>
+        </ul>
+        <div class="swiper-img">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="https://dn-simplecloud.shiyanlou.com/assets/1592582693154_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.png" alt="1">
+              </div>
+              <div class="item">
+                <img src="https://dn-simplecloud.shiyanlou.com//assets/1593569647380_百楼挑战第三期-6666ff.png" alt="2">
+              </div>
+              <div class="item">
+                <img src="https://dn-simplecloud.shiyanlou.com//assets/1592582534140_楼+pythonbanner20.png" alt="3">
+              </div>
+              <div class="item">
+                <img src="https://dn-simplecloud.shiyanlou.com//assets/1592793693824_linux10.png" alt="4">
+              </div>
+              <div class="item">
+                <img src="https://dn-simplecloud.shiyanlou.com/course/1584609456809_k8s_banner_ffcc33.png" alt="5">
+              </div>
+            </div>
+          
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">                 
+      <div class="container">
+        <div class="item">
+          <div class="title">
+            <a class="left" href="#">楼+ 实验课程<span> |</span><span class="txt">定期开班，导师助教全程辅导，最快最优成长</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="louplus-item">
+                  <a href="#">
+                    <img class="louplus-item-photo" src="https://dn-simplecloud.shiyanlou.com/course/1545727530595_数据分析与挖掘.png" alt="#">
+                    <div class="louplus-item-detail">
+                      <p>6 周成为数据分析与挖掘工程师</p>
+                      <p>最近班次： 7月1日</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="louplus-item">
+                  <a href="#">
+                    <img class="louplus-item-photo" src="https://dn-simplecloud.shiyanlou.com/course/1571375889048_企业微信截图_9bd1350f-ec15-415b-b53e-e62c29ec647f.png" alt="#">
+                    <div class="louplus-item-detail">
+                      <p>4 周掌握 Python 基础</p>
+                      <p>最近班次： 随到随学</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="louplus-item">
+                  <a href="#">
+                    <img class="louplus-item-photo" src="https://dn-simplecloud.shiyanlou.com/course/1565168718677_楼——首页.png" alt="#">
+                    <div class="louplus-item-detail">
+                      <p>6 周成为深度学习工程师</p>
+                      <p>最近班次： 7月6日</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="louplus-item">
+                  <a href="#">
+                    <img class="louplus-item-photo" src="https://dn-simplecloud.shiyanlou.com/course/1552548866160_企业微信截图_15525486809695.png" alt="#">
+                    <div class="louplus-item-detail">
+                      <p>11 周成为 Python 初级工程师</p>
+                      <p>最近班次： 7月15日</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-2">
+          <div class="title">
+            <a class="left" href="#">精选项目课<span> |</span><span class="txt">精选会员项目课程，动手中收获</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="row row-1">
+            <div class="col-md-6">
+              <div class="item-wrap">
+                <a href="#"><img class="het" src="./static/img/a1a8820ea275202fd11473539f57c3e2-0.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200426-1587870364389?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">TypeScript 基础入门</h4>
+                      <div class="txt-content">
+                        本课程是 TypeScript 基础入门课程。课程从什么是TypeScript 开始，一步步讲解到基本数据类型、接口、类、函数、模块、命名空间等知识点。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>281</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200410-1586488745518?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Go 并发服务器框架 Zinx 入门</h4>
+                      <div class="txt-content">
+                        本课程将使用 Go 语言从 0 开始动手实现 Zinx 框架，并学习 Golang 语言特性与并发服务器的设计思路。本课程内容已经取得 Zinx 框架开发者明确授权。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>230</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-2">
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200410-1586488731237?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Bootstrap 4 基础入门实战
+                      </h4>
+                      <div class="txt-content">
+                        Bootstrap4 是 Bootstrap 目前的最新版本，用于开发响应式布局、移动设备优先的 WEB 项目，本课程将通过一系列实战例子带领大家由浅入深地学习 Bootstrap4 基础。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>138</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200426-1587870381283?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Go 语言实现 23 种设计模式
+                      </h4>
+                      <div class="txt-content">
+                        设计模式（Design pattern）代表了最佳的实践，通常被有经验的面向对象的软件开发人员所采用。设计模式是软件开发人员在软件开发过程中面临的一般问题的解决方案。这些解决方案是众多软件开发人员经过相当长的一段时间的试验和错误总结出来的。
+
+本教程将通过 Golang 实例，一步一步向您讲解设计模式的概念。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>75</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200410-1586505092272?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">C 语言实现常见数据结构
+                      </h4>
+                      <div class="txt-content">
+                        本课程将通过使用 C 语言实现常见的数据结构，加深同学们对 C 语言的理解。课程将强化学员的数据结构基本功，帮助你在工作和面试脱颖而出。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>233</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200110-1578643296222?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">通过例子学 Rust
+                      </h4>
+                      <div class="txt-content">
+                        Rust 是一门注重安全（Safety）、速度（Speed）和并发（Concurrency）的现代系统编程语言。Rust 通过内存安全来实现以上目标，但不用垃圾回收机制。《通过例子学 Rust》由一系列可运行的实例组成，通过这些例子阐明了各种 Rust 的概念和基本库。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>337</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-3">
+          <div class="title">
+            <a class="left" href="#">近期好课<span> |</span><span class="txt">及时学习，跟进时代的脚步</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="container swiper-slide">
+                  <div class="row">
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200212-1581470476061?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">C Primer Plus 编程练习
+                              </h4>
+                              <div class="txt-content">
+                                本课程为《C Primer Plus》第六版的配套习题和解答，共计 16 章。课程内容分别对应原书第 2 章《C 语言概述》至 17 章《高级数据表示》。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191213-1576222400613?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">C++ Primer Plus 编程练习
+                              </h4>
+                              <div class="txt-content">
+                                本课程为《C++ Primer Plus》第六版的配套测试题，共计 17 章。课程内容分别对应原书第 2 章《开始学习C++》至 18 章《探讨 C++ 新标准》。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>2</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191219-1576738589552?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">Java 开发从入门到精通
+                              </h4>
+                              <div class="txt-content">
+                                本课程涉及内容较多，包括 Java 基础知识、Java 语法基础、条件语句、循环语句、数组、Java 面向对象编程、集合、常用的类库、泛型、异常处理、I/O 文件处理和流程、数据库编程、网络与通信编程、多线程和进程等。课程将通过爬取知乎用户数据的实战案例，带你入门 Java 项目开发。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200102-1577947360764?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">Python 神经网络编程
+                              </h4>
+                              <div class="txt-content">
+                                课程首先从简单的思路着手，详细介绍了理解神经网络如何工作所必须的基础知识。第一部分介绍基本的思路，包括神经网络底层的数学知识，第二部分是实践，介绍了学习 Python 编程的流行和轻松的方法，从而逐渐使用该语言构建神经网络，以能够识别人类手写的字母，特别是让其像专家所开发的网络那样地工作。第三部分我们对建立的神经网络进行优化，并且讨论了神经网络能够识别手写数字的具体原理。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container swiper-slide">
+                  <div class="row">
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200316-1584340955074?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">React 实战
+                              </h4>
+                              <div class="txt-content">
+                                本课程为 React 实战（React in Action）图书配套在线实验内容，涵盖了构建 React 应用所涉及的概念和 API，从 React 的核心思想和关键点讲起，并随着进展涉及更具体和高阶的主题。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191213-1576203518681?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">Python 编程快速上手
+                              </h4>
+                              <div class="txt-content">
+                                如今，人们面临的大多数任务都可以通过编写计算机软件来完成。Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。通过 Python 编程，我们能够解决现实生活中的很多任务。本课程是面向实践的 Python 编程实用指南，介绍 Python 语言的基础知识，通过项目实践教会读者如何应用这些知识和技能。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>2</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191213-1576203476722?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">深入理解 Spring Cloud 与微服务（第 2 版）
+                              </h4>
+                              <div class="txt-content">
+                                本课程从 Spring Cloud 的基础组件开始讲解，并对关键组件做了源码分析，同时也重点讲解了如何在 Spring Cloud 微服务系统中进行身份认证和权限安全的验证。课程中还会带领同学们熟悉对 Spring Cloud 每个组件的使用，最后再以一个综合案例介绍使用 Spring Cloud 构建微服务的全过程。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200212-1581470476061?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">C Primer Plus 编程练习
+                              </h4>
+                              <div class="txt-content">
+                                本课程为《C Primer Plus》第六版的配套习题和解答，共计 16 章。课程内容分别对应原书第 2 章《C 语言概述》至 17 章《高级数据表示》。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container swiper-slide">
+                  <div class="row">
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/ncn90.jpg?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">正则表达式基础入门
+                              </h4>
+                              <div class="txt-content">
+                                本课程介绍了正则表达式基本概念，并在Linux Shell环境中实践如何使用正则表达式对文本字符串进行处理。难度一般，适合具有 Linux 基础的同学学习。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200615-1592217676908?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">PyTorch 基础入门实战
+                              </h4>
+                              <div class="txt-content">
+                                PyTorch 是由 Facebook 团队维护的知名深度学习框架，越来越多的公司和研究团队偏向于使用 PyTorch 完成人工神经网络构建和深度学习应用。本次课程将带你从零入门 PyTorch 的使用。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>2</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/1505193911140.png?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">从代码审计中学习 Web 安全
+                              </h4>
+                              <div class="txt-content">
+                                本训练营将分为四个部分。第一部分介绍了代码审计思路以及几个比较基础的Web漏洞审计实例。比如 SQL 注入、XSS 、CSRF 等。第二部份更进一步的介绍了 Web 相关漏洞，比如文件类的 Web 漏洞。第三部分介绍一些比较深入的 Web 漏洞，比如会话认证漏洞。第四部则介绍了代码审计工具的使用以及对课程的总结。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200629-1593423048542?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">企业级网络配置实战
+                              </h4>
+                              <div class="txt-content">
+                                课程将使用 Cisco GNS3 模拟器来实践真实环境中的 ASA 防火墙备份部署过程，对公司内网安全以及冗余备份有至关重要的作用。同时，实验通过理论与实践结合的方式，学习并掌握拓扑知识及相关配置概念，完成一个大型企业网络部署实践。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container swiper-slide">
+                  <div class="row">
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200622-1592817044743?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">OpenCV 图像处理基础入门
+                              </h4>
+                              <div class="txt-content">
+                                OpenCV 是一个基于 C++ 编写的轻量级开源计算机视觉库，可运行在多种操作系统上。由于其具有很好的可读性和运行的效率，收到大量开发者的青睐。本课程将使用 Python 语言对 OpenCV 的库进行学习，介绍其常用的函数和使用技巧。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200316-1584340955074?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">React 实战
+                              </h4>
+                              <div class="txt-content">
+                                本课程为 React 实战（React in Action）图书配套在线实验内容，涵盖了构建 React 应用所涉及的概念和 API，从 React 的核心思想和关键点讲起，并随着进展涉及更具体和高阶的主题。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>2</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191213-1576203518681?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">Python 编程快速上手
+                              </h4>
+                              <div class="txt-content">
+                                如今，人们面临的大多数任务都可以通过编写计算机软件来完成。Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。通过 Python 编程，我们能够解决现实生活中的很多任务。本课程是面向实践的 Python 编程实用指南，介绍 Python 语言的基础知识，通过项目实践教会读者如何应用这些知识和技能。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="item-wrap">
+                        <a class="card-inner" href="#">
+                          <div class="photo-area">
+                            <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20191213-1576203476722?imageView2/2/h/150/q/100" alt="">
+                          </div>
+                          <div class="content-area">
+                            <div class="txt-wrap">
+                              <h4 class="title">深入理解 Spring Cloud 与微服务（第 2 版）
+                              </h4>
+                              <div class="txt-content">
+                                本课程从 Spring Cloud 的基础组件开始讲解，并对关键组件做了源码分析，同时也重点讲解了如何在 Spring Cloud 微服务系统中进行身份认证和权限安全的验证。课程中还会带领同学们熟悉对 Spring Cloud 每个组件的使用，最后再以一个综合案例介绍使用 Spring Cloud 构建微服务的全过程。
+                              </div>
+                            </div>
+                            <div class="meta-data-inner">
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                              <span>0</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+              
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-4">                  
+          <div class="title">
+            <a class="left" href="#">基本功<span> |</span><span class="txt">行业专家打造的免费基础课程，注册即可学习</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="row">
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200325-1585103411810?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">新手入门指南之玩转实验楼
+                      </h4>
+                      <div class="txt-content">
+                        课程为实验楼新手入门指南，我们将带你了解实验楼的常用功能和环境使用方法。最后，课程通过一个 C 语言的小例子，让每位学员亲自体验到实验楼线上环境的便捷性和易用性。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>412005</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/ncn1.jpg?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Linux 基础入门
+                      </h4>
+                      <div class="txt-content">
+                        本课程教你如何熟练地使用 Linux，本实验中通过在线动手实验的方式学习 Linux 常用命令，用户与权限管理，目录结构与文件操作，环境变量，计划任务，管道与数据流重定向等基本知识点。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>294137</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1542592801417_【596】-【Python3简明教程】.png?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Python3  简明教程
+                      </h4>
+                      <div class="txt-content">
+                        简明易懂的 Python3 课程，不仅适用于那些有其它语言基础的同学，对没有编程经验的同学也非常友好。本课程不仅讲解了 Python3 基础知识，还介绍了 PEP8、Virtualenv、测试、项目结构以及 Flask 相关内容
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>86206</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 card">
+              <div class="item-wrap">
+                <a href="#">
+                  <div class="photo-area">
+                    <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1550728729236_【1035】-【Git与GitHub入门实践】(1).png?imageView2/2/h/150/q/100" alt="">
+                  </div>
+                  <div class="content-area">
+                    <div class="txt-wrap">
+                      <h4 class="title">Git 与 GitHub 入门实践
+                      </h4>
+                      <div class="txt-content">
+                        本课程为 Git 与 GitHub 的入门课程，本着实用的原则，针对零基础同学，以图文的形式详细介绍了 Git & GitHub 结合使用的基本操作。课程包括：在 GitHub 上创建仓库、克隆 GitHub 上的仓库到本地、添加修改到暂存区以及撤销修改、配置个人信息、版本回退、处理提交时间线分叉问题、使用本地提交变化记录、添加 SSH 关联授权等方方面面的知识点。
+                      </div>
+                    </div>
+                    <div class="meta-data-inner">
+                      <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                      <span>13208</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-5">
+          <div class="title">
+            <a class="left" href="#">后端开发</a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com//assets/1590648950895_1597竖版宣传图.png?imageView2/2/h/520" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid770606-20191111-1573441965331?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">Flask 实现一个问答社区
+                        </h4>
+                        <div class="txt-content">
+                          从零开始实现一个完整的问答社区项目，包含用户评论、点赞、回复、签到，收藏、加精、置顶、搜索，登录注册和邮件激活、密码找回等功能。本课程主要使用 Flask 完成问答社区项目，适合对 Web 开发有一定基础，想进一步加强理解与运用的同学。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>222</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1542592873707_【608】-【C++实现简易Docker容器】.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">C++ 实现简易 Docker 容器
+                        </h4>
+                        <div class="txt-content">
+                          Docker 的本质是使用 LXC 实现类似虚拟机的功能，进而节省的硬件资源提供给用户更多的计算资源。本项目将 C++ 与 Linux 的 Namespace 及 Control Group 技术相结合，实现一个简易 Docker 容器。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>1697</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/1517283015763.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">Spring MVC 基础入门
+                        </h4>
+                        <div class="txt-content">
+                          Spring MVC 是一个强大灵活的 Web 框架，其提供了 DispatcherServlet 作为前端控制器来分配请求。本次课程，将学习 Spring 策略接口，以及 JSP、Velocity、Tiles 等相关技术。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>3538</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200518-1589773166669?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">Java 单元测试入门实战
+                        </h4>
+                        <div class="txt-content">
+                          Java 单元测试入门实战，本课程主要讲解如何使用 JUnit 来进行单元测试，会学习到单元测试的基本概念以及 JUnit 的基本功能和操作，并且了解单元测试的基���步骤和方法。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>37</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/1528795046794.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">动手实战学 Docker
+                        </h4>
+                        <div class="txt-content">
+                          本课程由实验楼具备 Docker 实战经验的工程师精心打造，同时可以完全在线实验的 Docker 培训内容。课程包含了最快的上手教程，最新的技术领域，最多的动手实践。你可以在线实验并学习到 Docker，DockerFile，Compose，Swarm 等技术。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>3163</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200701-1593593013878?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">C++ 进阶应用实战
+                        </h4>
+                        <div class="txt-content">
+                          本课程主要讲解 C++ 的进阶应用知识，包括：模板、封装、继承、多态等。课程将以实验和例子为主，结合实际开发中注意事项，设计有针对性的题目进行实战练习。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>73</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-6">
+          <div class="title">
+            <a class="left" href="#">后端开发</a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com//assets/1590651546124_1080竖版宣传图.png?imageView2/2/h/520" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1542594657171_【832】-【Hadoop分布式文件系统——导入和导出数据】.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">Hadoop 数据导入与导出
+                        </h4>
+                        <div class="txt-content">
+                          一个经典的数据架构中，Hadoop 是处理复杂数据流的核心。数据往往是从许多分散的系统中收集而来，并导入 Hadoop 分布式文件系统（HDFS）中，通过 MapReduce 或者其他基于 MapReduce 封装的语言进行处理。本课程的重点将关注 HDFS 数据的导入与导出，包含与本地文件系统、关系数据库、NoSQL 数据库、分布式数据库以及其他 Hadoop 集群之间数据的互相导入导出。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>3400</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid770606-20191017-1571278748855?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">知识图谱构建射雕三部曲人物关系
+                        </h4>
+                        <div class="txt-content">
+                          知识图谱（Knowledge Graph）是一门前沿的交叉学科，用于将人类社会的海量知识结构化，并提供一个可理解，可解释的一个模型。本训练营将以《射雕三部曲》为例，从 0 构建起一个可以实际应用的知识图谱，在课程中你将学习 Neo4j 数据库的使用和知识图谱的构建。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>449</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1561012727318_【1348】-【PyTorch深度学习基础课程】.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">PyTorch 深度学习基础入门
+                        </h4>
+                        <div class="txt-content">
+                          PyTorch 是由 Facebook 主导开发的深度学习框架，因其高效的计算过程以及良好的易用性被诸多大公司和科研人员所喜爱。本次课程中，我们将学习 PyTorch 的基础语法，了解 Autograd 自动求导机制，并最终利用 PyTorch 构建可用于图像分类任务的人工神经网络。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>1262</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/1523958570202.png?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">Pandas 百题大冲关
+                        </h4>
+                        <div class="txt-content">
+                          Pandas 是基于 NumPy 的数据处理工具，其提供了高效操作大型数据集所需的函数和方法，是数据分析中必不可少的模块。Pandas 百题大冲关共有 100 道练习题，不仅可以学习 Pandas 的使用，也是复习 Pandas 的必备宝典。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>12555</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/course/1582013384808_880-scikit-learn机器学习入门实战.jpg?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">scikit-learn 机器学习入门实战
+                        </h4>
+                        <div class="txt-content">
+                          本课程作为机器学习入门课程，将详细介绍 scikit-learn 的使用。课程包括了线性回归与感知机分类、支持向量机分类、K-Means 聚类算法、PCA 主成分分析、随机森林分类与回归、高斯混合模型等常用的机器学习算法。同时，课程将涉及模型的验证与模型选择，进一步提升实践能力。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>131</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 under card">
+                <div class="item-wrap">
+                  <a href="#">
+                    <div class="photo-area">
+                      <img class="col-img" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200506-1588760137560?imageView2/2/h/150/q/100" alt="">
+                    </div>
+                    <div class="content-area">
+                      <div class="txt-wrap">
+                        <h4 class="title">机器学习数学基础
+                        </h4>
+                        <div class="txt-content">
+                          本课程将对机器学习所涉及的数学基础知识进行讲解和回顾，包括微积分，线性代数，概率论，以及统计学等，并使用 Python 完成实践。
+                        </div>
+                      </div>
+                      <div class="meta-data-inner">
+                        <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+                        <span>133</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-7">
+          <div class="title">
+            <a class="left" href="#">训练强化<span> |</span><span class="txt">专注实战的完整项目，在实战中融会贯通</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="line">
+              <a class="clearfix" href="#">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img class="item-photo-7" src="https://dn-simplecloud.shiyanlou.com/courses/uid770606-20191112-1573539538032?imageView2/2/h/250" alt="">
+                  </div>
+                  <div class="col-md-7 item-content-7">
+                    <h5 class="title">Go + Nuxt.js 搭建一个 BBS 系统</h5>
+                    <p class="txt">课程会带领大家一步步的了解并熟悉 Go 语言开发，使用 Go 语言和 Nuxt.js 实现一个 BBS 论坛系统。如果你是一个 Go 语言初学者，或者正准备学习 Go 语言，那么这个课程非常适合你。如果你熟练掌握了本课程中的知识点，相信你就已经入门 Go 语言开发。</p>
+                    <div class="bottom">
+                      <div class="tags">
+                        <span>Web</span>
+                        <span>Go</span>
+                      </div>
+                      <div class="btn-details">查看详情</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="line">
+              <a class="clearfix" href="#">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img class="item-photo-7" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200227-1582780616598?imageView2/2/h/250" alt="">
+                  </div>
+                  <div class="col-md-7 item-content-7">
+                    <h5 class="title">Spring Boot 企业级商城开发实战</h5>
+                    <p class="txt">本训练营中的课程会介绍 Spring Boot 在项目开发中的大部分使用场景以及整合方法和开发技巧，当然也会更加侧重于如何使用 Spring Boot 来开发一个大型的商城项目，让更多的 Spring Boot 技术学习者有更加深刻的学习和实践体验，不管你是在校大学生亦或者是已经有了一些工作经验的开发者，这个项目都会给你带来很好的提升，楼楼商城完整的项目源码在实验 36 中可以下载到。</p>
+                    <div class="bottom">
+                      <div class="tags">
+                        <span>Spring</span>
+                        <span>Java</span>
+                        <span>后端开发</span>
+                        <span>SpringBoot</span>
+                      </div>
+                      <div class="btn-details">查看详情</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="line">
+              <a class="clearfix" href="#">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img class="item-photo-7" src="https://dn-simplecloud.shiyanlou.com/courses/uid214893-20200316-1584351999684?imageView2/2/h/250" alt="">
+                  </div>
+                  <div class="col-md-7 item-content-7">
+                    <h5 class="title">Next.js 轻量级 React 框架实战</h5>
+                    <p class="txt">Next.js 是一个轻量级的 React 服务端渲染应用框架，被 Hulu，Twitch 等世界知名公司使用。本次课程将带你了解 Next.js 框架基础知识，并逐步深入，带你使用其构建和部署静态和动态站点。</p>
+                    <div class="bottom">
+                      <div class="tags">
+                        <span>React</span>
+                      </div>
+                      <div class="btn-details">查看详情</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item item-8">
+          <div class="title">
+            <a class="left" href="#">学习路径<span> |</span><span class="txt">精准而系统的学习路径，从0到大牛</span></a>
+            <a class="right" href="#"><span class="txt">更多></span></a>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="item-photo-8"><img src="https://dn-simplecloud.shiyanlou.com/course/1555406408145_【路径】-【Python研发工程师】.png" alt=""></div>
+                  <div class="item-content-8">
+                    <h5 class="title">Python 研发工程师</h5>
+                    <div class="learn-path-courses">56门课程</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="item-photo-8"><img src="https://dn-simplecloud.shiyanlou.com/1487741005890.png" alt=""></div>
+                  <div class="item-content-8">
+                    <h5 class="title">新手入门</h5>
+                    <div class="learn-path-courses">11门课程</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="item-photo-8"><img src="https://dn-simplecloud.shiyanlou.com/course/1552356927768_【路径】-【Java研发工程师】.png" alt=""></div>
+                  <div class="item-content-8">
+                    <h5 class="title">Java 研发工程师</h5>
+                    <div class="learn-path-courses">35门课程</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="item-photo-8"><img src="https://dn-simplecloud.shiyanlou.com/uid/c7edc0e1f2cfc8f40d1b699aaa32766b/1501840618053.png" alt=""></div>
+                  <div class="item-content-8">
+                    <h5 class="title">机器学习工程师</h5>
+                    <div class="learn-path-courses">36门课程</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item-9">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div class="feature-item">
+                <img src="https://static.shiyanlou.com/frontend/dist/img/5940276.gif" alt="">
+                <p>丰富全面的计算机实验课程</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="feature-item">
+                <img src="https://static.shiyanlou.com/frontend/dist/img/8b66710.gif" alt="">
+                <p>在线编程环境，1秒启动</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="feature-item">
+                <img src="https://static.shiyanlou.com/frontend/dist/img/9600bd2.gif" alt="">
+                <p>每天一个项目课，丰富你的项目经验</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="feature-item">
+                <img src="https://static.shiyanlou.com/frontend/dist/img/7f21af6.gif" alt="">
+                <p>有效学习时间，真实记录你的代码生涯</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-panel">
+      <div class="widget">
+        <div class="widget-icon">
+          <a href="#"><img src="https://static.shiyanlou.com/frontend/dist/img/2a64526.png" alt=""></a>
+        </div>
+        <div class="widget-content">开通会员，即刻开始学习</div>
+      </div>
+      <div class="widget">
+        <div class="widget-icon">
+          <a href="#"><img class="widget-icon-image" src="https://static.shiyanlou.com/frontend/dist/img/8832e65.svg" alt=""></a>
+        </div>
+        <div class="widget-content image-content">
+          <img src="https://static.shiyanlou.com/frontend/dist/img/0eca43a.png" alt="">
+          <img src="https://static.shiyanlou.com/frontend/dist/img/ac9b47a.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div>
+              <img src="https://static.shiyanlou.com/frontend/dist/img/4a4ab3d.svg" alt="">
+            </div>
+            <div class="slogan">动手做实验，轻松学IT</div>
+            <div class="social">
+              <a href="#"><svg t="1594111149335" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2109" width="16" height="16"><path d="M352.814545 385.396364m-33.512727 0a33.512727 33.512727 0 1 0 67.025455 0 33.512727 33.512727 0 1 0-67.025455 0Z" fill="#50B674" p-id="2110"></path><path d="M502.690909 384.465455m-33.512727 0a33.512727 33.512727 0 1 0 67.025454 0 33.512727 33.512727 0 1 0-67.025454 0Z" fill="#50B674" p-id="2111"></path><path d="M576.232727 534.341818m-23.272727 0a23.272727 23.272727 0 1 0 46.545455 0 23.272727 23.272727 0 1 0-46.545455 0Z" fill="#50B674" p-id="2112"></path><path d="M694.458182 536.203636m-23.272727 0a23.272727 23.272727 0 1 0 46.545454 0 23.272727 23.272727 0 1 0-46.545454 0Z" fill="#50B674" p-id="2113"></path><path d="M512 0C229.003636 0 0 229.003636 0 512s229.003636 512 512 512 512-229.003636 512-512S794.996364 0 512 0z m-87.505455 630.225455c-26.996364 0-48.407273-5.585455-75.403636-11.17091l-75.403636 37.236364 21.410909-64.232727c-53.992727-37.236364-85.643636-85.643636-85.643637-145.221818 0-102.4 96.814545-182.458182 215.04-182.458182 105.192727 0 198.283636 64.232727 216.901819 150.807273-6.516364-0.930909-13.963636-0.930909-20.48-0.93091-102.4 0-182.458182 76.334545-182.458182 170.356364 0 15.825455 2.792727 30.72 6.516363 44.683636-7.447273 0-13.963636 0.930909-20.48 0.93091z m314.647273 75.403636l15.825455 53.992727-58.647273-32.581818c-21.410909 5.585455-42.821818 11.170909-64.232727 11.170909-102.4 0-182.458182-69.818182-182.458182-155.461818s80.058182-155.461818 182.458182-155.461818c96.814545 0 182.458182 69.818182 182.458182 155.461818 0 47.476364-31.650909 90.298182-75.403637 122.88z" fill="#50B674" p-id="2114"></path></svg></a>
+              <a href="#"><svg t="1594111174620" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2967" width="16" height="16"><path d="M448.698182 482.210909c-96.814545 4.654545-175.010909 56.785455-175.010909 121.949091s78.196364 114.501818 175.010909 109.847273S623.709091 647.912727 623.709091 582.749091c-0.930909-64.232727-79.127273-105.192727-175.010909-100.538182z m65.163636 164.770909c-29.789091 39.098182-88.436364 57.716364-145.221818 26.065455-26.996364-14.894545-26.065455-43.752727-26.065455-43.752728s-11.170909-92.16 85.643637-103.330909c97.745455-12.101818 115.432727 81.92 85.643636 121.018182z" fill="#EA5D5C" p-id="2968"></path><path d="M448.698182 584.610909c-6.516364 4.654545-7.447273 13.032727-3.723637 18.618182 2.792727 5.585455 11.170909 6.516364 16.756364 1.861818 5.585455-4.654545 8.378182-13.032727 4.654546-18.618182-2.792727-5.585455-10.24-6.516364-17.687273-1.861818zM403.083636 597.643636c-18.618182 1.861818-30.72 17.687273-30.72 33.512728 0 14.894545 14.894545 26.065455 32.581819 24.203636 17.687273-1.861818 32.581818-15.825455 32.581818-31.650909s-13.963636-27.927273-34.443637-26.065455z" fill="#EA5D5C" p-id="2969"></path><path d="M512 0C229.003636 0 0 229.003636 0 512s229.003636 512 512 512 512-229.003636 512-512S794.996364 0 512 0z m197.352727 626.501818C669.323636 712.145455 538.065455 754.036364 441.250909 746.589091c-92.16-7.447273-211.316364-38.167273-223.418182-151.738182 0 0-6.516364-51.2 42.821818-117.294545 0 0 70.749091-99.607273 152.669091-128.465455 82.850909-27.927273 92.16 19.549091 92.16 48.407273-4.654545 24.203636-12.101818 38.167273 18.618182 28.858182 0 0 80.989091-38.167273 114.501818-4.654546 26.996364 26.996364 4.654545 65.163636 4.654546 65.163637s-11.170909 12.101818 12.101818 16.756363c21.410909 3.723636 94.021818 37.236364 53.992727 122.88z m-80.058182-236.450909c-8.378182 0-15.825455-7.447273-15.825454-15.825454 0-9.309091 7.447273-15.825455 15.825454-15.825455 0 0 99.607273-18.618182 87.505455 89.367273v1.861818c-0.930909 7.447273-7.447273 13.963636-15.825455 13.963636-9.309091 0-15.825455-7.447273-15.825454-15.825454 0-1.861818 15.825455-73.541818-55.854546-57.716364zM797.789091 493.381818c-2.792727 18.618182-12.101818 11.170909-22.341818 11.170909-13.032727 0-23.272727-16.756364-23.272728-29.789091 0-11.170909 4.654545-22.341818 4.654546-22.341818 0.930909-4.654545 12.101818-34.443636-7.447273-78.196363-35.374545-60.509091-106.123636-60.509091-114.501818-57.716364-8.378182 3.723636-21.410909 5.585455-21.410909 5.585454-13.032727 0-23.272727-10.24-23.272727-23.272727 0-11.170909 7.447273-19.549091 16.756363-22.341818 0 0 0 0.930909 0.930909 0.930909s1.861818 0.930909 1.861819 0.930909c10.24-1.861818 45.614545-4.654545 79.127272 3.723637 62.370909 14.894545 146.152727 83.781818 108.916364 211.316363z" fill="#EA5D5C" p-id="2970"></path></svg></a>
+            </div>
+          </div>
+          <div class="col-xs-3 col-md-2 links">
+            <div class="title">公司</div>
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">加入我们</a>
+          </div>
+          <div class="col-xs-3 col-md-2 links">
+            <div class="title">合作</div>
+            <a href="#">成为作者</a>
+            <a href="#">教师合作</a>
+            <a href="#">友情链接</a>
+            <a href="#">开发者</a>
+          </div>
+          <div class="col-xs-3 col-md-2 links">
+            <div class="title">服务</div>
+            <a href="#">企业版</a>
+            <a href="#">实战训练营</a>
+            <a href="#">会员服务</a>
+            <a href="#">实验报告</a>
+            <a href="#">常见问题</a>
+            <a href="#">隐私条款</a>
+          </div>
+          <div class="col-xs-3 col-md-2 links">
+            <div class="title">学习路径</div>
+            <a href="#">Python学习路径</a>
+            <a href="#">Linux学习路径</a>
+            <a href="#">大数据学习路径</a>
+            <a href="#">Java学习路径</a>
+            <a href="#">PHP学习路径</a>
+            <a href="#">全部</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="./static/js/jquery.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="./static/js/jquery.dropdown.min.js"></script>
+  <script src="./static/js/swiper.min.js"> </script>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>
