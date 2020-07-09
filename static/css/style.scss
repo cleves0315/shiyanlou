@@ -15,6 +15,135 @@ li {
   padding: 0;
 }
 
+.navbar-widescreen {
+  display: none;
+  height: 72px;
+  background: #fff;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,.18);
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo-wrap {
+    padding: 0 5px;
+    img {
+      height: 50px;
+    }
+  }
+
+  .container .collapse {
+    margin-left: 10px;
+    .base-menu-wrap {
+      a {
+        line-height: 72px;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #3a3a3a;
+        font-size: 16px;
+      }
+      a:hover {
+        color: #08bf91;
+      }
+    }
+
+    .dropdown:hover .base-menu-list {
+      display: block;
+    }
+    .base-menu-list {
+      padding: 0;
+      border: 0;
+      width: 160px;
+      overflow: hidden;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 15px 16px 0 rgba(0,0,0,.18);
+
+      li {
+        a {
+          line-height: 1.8;
+          padding: 15px 40px;
+        }
+      }
+    }
+
+    .base-menu-right {
+      display: flex;
+      float: right;
+      margin-left: 180px;
+      font-size: 16px;
+      align-items: center;
+
+      .verson {
+        color: #999;
+        a {
+          color: #999;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #08bf91;
+        }
+      }
+
+      .form-group {
+        position: relative;
+        margin-bottom: 0;
+        margin-left: 20px;
+        input {
+          width: 180px;
+          height: 30px;
+          border-radius: 50px;
+        }
+        input:hover {
+          border-color: #08bf91;
+        }
+        input:focus {
+          border-color: #08bf91;
+        }
+        span {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          z-index: 9;
+          transform: translateY(-50%);
+          cursor: pointer;
+          font-size: 13px;
+        }
+      }
+
+      .sign-btns {
+        display: flex;
+        height: 72px;
+        margin-left: 30px;
+
+        & > div a {
+          line-height: 72px;
+          vertical-align: middle;
+          padding: 0 15px;
+        }
+
+        a {
+          display: block;
+          color: #3a3a3a;
+          text-decoration: none;
+        }
+
+        .sign-in-btn:hover a {
+          color: #08bf91;
+        }
+        .sign-up-btn {
+          background: #08bf91;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
 .header {
   margin: 20px 0 0;
   padding-bottom: 0;
@@ -912,10 +1041,12 @@ footer {
 }
 
 
-
 @media screen and (max-width: 750px) {
   .header {
     display: none;
+  }
+  .navbar-widescreen {
+   display: none !important; 
   }
   .navbar {
     display: block;

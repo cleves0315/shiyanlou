@@ -9,5 +9,16 @@ $(function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  })  
+  });
+
+  $(document).scroll(function() {
+    var scrTop = $(document).scrollTop();
+
+    // console.log(scrTop)
+    if (scrTop > 160) {
+      $('.navbar-widescreen').show()
+    } else {
+      $('.navbar-widescreen').hide()
+    }
+  })
 })
